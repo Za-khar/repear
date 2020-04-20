@@ -8,9 +8,9 @@
         padding-right: 140px
         &__title
             font-size: 41px
-            font-weight: 700
             line-height: 55px
             margin-bottom: 20px
+            +bold
         &__subtitle
             display: inline-block
             font-size: 20px
@@ -26,8 +26,6 @@
             text-align: left
         &__image
             margin-right: 30px
-            height: 40px
-            width: 40px
         &__text
             max-width: 300px
 @media (max-width: 1200px)
@@ -52,8 +50,17 @@
                 margin-bottom: 20px
             &__text
                 font-size: 12px
+            &__images
+                margin-right: 14px
+@media (max-width: 480px)
+    .hero
+        &-list
+            &__text
+                width: 80%
             &__image
-                margin-right: 14px    
+                margin-right: 10px    
+                
+                
 
 
 
