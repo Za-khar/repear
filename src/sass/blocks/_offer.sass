@@ -31,6 +31,23 @@
     &__button    
         width: 100%
         min-height: 70px
+        +bold
+    &-comment
+        font-size: 15px
+        display: flex
+        margin-top: 32px
+        &__main-text
+            margin: 0
+            width: 225px
+            font-size: 15px
+            line-height: 1.6
+            margin-right: 65px
+        &__title
+            line-height: 1.6
+            margin: 0
+            margin-bottom: 5px 
+        &__phone
+            font-size: 15px
 @media (max-width: 1200px)
     .offer
         &__input
@@ -38,12 +55,22 @@
             margin-bottom: 10px
         &__button
             font-size: 13px 
+        &-comment
+            margin-top: 20px
+            display: block
+            &__main-text
+                width: 100%
+                margin-bottom: 15px
 @media (max-width: 768px)
     .offer
         background: #fff
         &-block
             width: 100%
             padding-right: 0
+        &-comment
+            &__main-text
+                margin-bottom: 10px
+               
 
 
 

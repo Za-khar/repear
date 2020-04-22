@@ -19,9 +19,12 @@ img
     background-color: $main-color
     border: none
     padding: 18px 30px
+    outline: none 
     &:hover
         cursor: pointer
         background-color: lighten($main-color, 10%)
+    &:active
+        background-color: darken($main-color, 10%)  
 .section
     padding: 90px 0
     &-title
@@ -34,6 +37,11 @@ img
     padding: 20px 26px
     font-size: 15px
     border-radius: 10px
+    outline: none
+.phone
+    color: $text-color
+    text-decoration: none
+    +bold
 
 
 

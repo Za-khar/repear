@@ -52,11 +52,16 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+  outline: none;
 }
 
 .button:hover {
   cursor: pointer;
   background-color: #ffdb33;
+}
+
+.button:active {
+  background-color: #cca800;
 }
 
 .section {
@@ -78,6 +83,14 @@ img {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
+  outline: none;
+}
+
+.phone {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 /** Импорт стилей шапки **/
@@ -124,11 +137,7 @@ img {
 .navbar__phone {
   display: inline-block;
   font-size: 20px;
-  color: #333333;
-  text-decoration: none;
   margin-top: 10px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -297,6 +306,34 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer-comment {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.offer-comment__main-text {
+  margin: 0;
+  width: 225px;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-right: 65px;
+}
+
+.offer-comment__title {
+  line-height: 1.6;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.offer-comment__phone {
+  font-size: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -307,6 +344,14 @@ img {
   .offer__button {
     font-size: 13px;
   }
+  .offer-comment {
+    margin-top: 20px;
+    display: block;
+  }
+  .offer-comment__main-text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -316,6 +361,9 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer-comment__main-text {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
