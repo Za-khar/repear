@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
 </head>
 
 <body>
@@ -144,7 +148,7 @@
                 <p class="section-subtitle price__subtitle">Прайс на наши услуги</p>
                 <!-- /.section-subtitle price__subtitle -->
                 <div class="cards">
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay = "0.1s">
                         <div class="card__image"><img src="img/price/living.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -156,7 +160,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay = "0.2s">
                         <div class="card__image"><img src="img/price/bathroom.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -168,7 +172,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay = "0.3s">
                         <div class="card__image"><img src="img/price/office.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -180,7 +184,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay = "0.4s">
                         <div class="card__image"><img src="img/price/houses.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -192,7 +196,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay = "0.5s">
                         <div class="card__image"><img src="img/price/kitchen.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -204,7 +208,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card wow price__card animate__animated animate__fadeInUp" data-wow-delay = "0.6s">
                         <div class="card__image"><img src="img/price/buildings.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -238,7 +242,9 @@
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 <script src="js/modal.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script>
+    new WOW().init();
     $(document).ready(function () {
         $('.slider').slick({
             slidesToShow: 3,
